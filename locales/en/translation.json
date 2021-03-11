@@ -1,0 +1,13 @@
+{
+  "title": "Feeds Service",
+  "description": {
+    "publisher": "Publisher Account",
+    "power": "Powered by Elastos",
+    "dialogtitle": "Publisher Account QR Code"
+  },
+  "button": {
+    "link": "Link",
+    "con": "Connect",
+    "dis": "Disconnect"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "title": "フィーズサービス",
+  "description": {
+    "publisher": "出版アカウント",
+    "power": "Powered by Elastos",
+    "dialogtitle": "出版アカウントQRコード"
+  },
+  "button": {
+    "link": "リンク",
+    "con": "接続",
+    "dis": "切断"
+  }
+}
