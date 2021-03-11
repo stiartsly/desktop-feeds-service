@@ -1,0 +1,89 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'),
+    url(../assets/fonts/Montserrat/Montserrat-Regular.ttf) format('truetype');
+}
+
+body {
+  position: relative;
+  color: white;
+  height: 100vh;
+
+  background-color: #7624fe;
+  background-image: linear-gradient(0deg, #3498ae 0%, #7624fe 100%);
+
+  /* background: linear-gradient(120deg, #ee7752, #7624fe, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite; */
+
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  background-color: white;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  outline: none;
+  width: 180px;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  appearance: none;
+  font-size: 1.1rem;
+  box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
+    0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+  transition: transform ease-in 0.1s;
+}
+
+.connected {
+  background-color: #72ec0d;
+  background-image: linear-gradient(0deg, #d39a30 0%, #5ac006 80%);
+}
+
+.disconnected {
+  background-color: #ec410d;
+  background-image: linear-gradient(0deg, #d37130 0%, #c00c06 80%);
+}
+
+button:hover {
+  /* transform: scale(1.05); */
+  background-color: rgb(203, 200, 248);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  margin: 0 10px 0 10px;
+}

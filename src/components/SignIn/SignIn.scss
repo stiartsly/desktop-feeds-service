@@ -1,0 +1,76 @@
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.glassContainer {
+  position: relative;
+  /* center content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -30px;
+  width: 600px;
+  height: 200px;
+}
+.cover {
+  transition: 0.5s all ease;
+  height: 70%;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.25);
+  /* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+  /* For the fog-like glass effect */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+
+/* responsiveness */
+
+@media (max-width: 700px) {
+  .cover {
+    height: 30%;
+  }
+}
+
+.userLogin {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainer {
+  background-color: #3498ae;
+  background-image: linear-gradient(0deg, #3498ae 0%, #7624fe 100%);
+  width: auto;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  // box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  //   0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+  //   0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  //   0 100px 80px rgba(0, 0, 0, 0.22);
+
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 100px 80px rgba(0, 0, 0, 0.22), 0 16px 32px rgba(0, 0, 0, 0.07),
+    0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+.footer {
+  margin-bottom: -30px;
+}
+
+.elastosLogo {
+  margin: 0 0 0 5px;
+}
+
+.version {
+  color: #fff;
+  text-decoration: underline;
+}

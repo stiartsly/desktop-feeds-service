@@ -1,0 +1,31 @@
+.glassContainer {
+  position: relative;
+  /* center content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -30px;
+  width: 600px;
+  height: 200px;
+}
+.cover {
+  transition: 0.5s all ease;
+  height: 70%;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.25);
+  /* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+  /* For the fog-like glass effect */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+
+/* responsiveness */
+
+@media (max-width: 700px) {
+  .cover {
+    height: 30%;
+  }
+}
